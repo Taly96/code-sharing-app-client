@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+/* App.css */
+/* Import the desired highlight.js styles */
+@import 'highlight.js/styles/vs2015.css';
+
+/* Reset some default styles for consistency */
+body, ul {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Style for the header */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #333;
   color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for the main content */
+.App {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.Home{
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+/* Style for the code snippet list */
+.list-group {
+  list-style: none;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for each code snippet item */
+.list-item {
+  border: 1px solid #33838d;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #a394a3ea;
+  border-radius: 5px;
+}
+
+/* Add a hover effect for snippet items */
+.list-item:hover {
+background-color: #8e76767d; /* Change the background color when hovering */
+cursor: pointer; /* Change the cursor to a pointer when hovering */
+}
+
+
+/* Style for the code block within a snippet item */
+.code {
+  background-color: #a03838;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+/* Style for snippet titles */
+h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Style for loading message */
+.loading-message {
+  font-style: italic;
+  color: #777;
 }
