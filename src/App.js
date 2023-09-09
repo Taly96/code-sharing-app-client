@@ -4,8 +4,7 @@ import HomeP from "./pages/HomeP";
 import CodeBlockP from "./pages/CodeBlockP";
 import io from "socket.io-client";
 import "./App.css";
-const socketUrl =
-  "https://https://code-sharing-app-api-827df04e0f24.herokuapp.com/";
+const socketUrl = "https://code-sharing-app-api-827df04e0f24.herokuapp.com/";
 const socket = io.connect(socketUrl);
 
 function App() {

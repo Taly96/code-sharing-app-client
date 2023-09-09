@@ -15,7 +15,7 @@ function CodeBlock({ socket, codeBlockProps }) {
           navigate(`/${codeBlockProps._id}`);
         }}
       >
-        <h2>{codeBlockProps.title}</h2>
+        <h2> {codeBlockProps.title}</h2>
         <pre>
           <CodeHighlighter code={codeBlockProps.code} language="javascript" />
         </pre>
